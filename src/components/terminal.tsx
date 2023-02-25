@@ -21,10 +21,10 @@ export class Terminal extends React.Component<any, any> {
                 <div className={"flex h-full"}>
                     <img src={this.img_src} className={"object-cover"}/>
                 </div>
-                <div className={"flex justify-center bg-green-800"}>
-                    <span className={"text-center text-3xl p-10 text-white"}>{this.props.header}</span>
+                <div className={"flex flex-col justify-center bg-green-800"}>
+                    <span className={"flex text-center justify-center text-3xl p-10 text-white"}>{this.props.header}</span>
                     <br/>
-                    <span className={"text-base"}>{this.txt}</span>
+                    <span className={"flex text-base"}>{this.txt}</span>
                 </div>
             </div>
         );
@@ -33,11 +33,15 @@ export class Terminal extends React.Component<any, any> {
     private constructTermBig()
     {
         return(
-            <div className={"termbig flex flex-row w-full overflow-hidden p-20 pl-80 pr-80"}>
-                <div className={"w-3/5"}>
-                    {this.txt}
+            <div className={"termbig flex flex-row w-full overflow-hidden justify-evenly m-20"}>
+                <div className={"flex flex-col justify-center w-3/5 bg-green-400 p-10 bg-[url('src/assets/texture.jpg')] bg-opacity-20 bg-contain"}>
+                    <span className={"flex justify-center text-center text-3xl text-white"}>{this.props.header}</span>
+                    <br/>
+                    <span className={"flex text-start text-white"}>{this.txt}</span>
                 </div>
-                <div className={"w-2/5 bg-cover bg-[url('src/assets/home-nav-bg.jpg')]"}/>
+                <div className={"flex h-full"}>
+                    <img src={this.img_src} className={"object-cover"}/>
+                </div>
             </div>
         );
     }

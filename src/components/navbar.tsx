@@ -30,14 +30,14 @@ export function NavBar()
           <div className={"h-full w-1/3"}>
               <img src={logo} className={"logo-img"}/>
           </div>
-          <div className={"flex w-1/3 h-full items-center justify-center"}>
+          <div className={"flex w-1/2 h-full items-center justify-center"}>
               <table className={"border-separate border-spacing-10 font-serif text-xl font-bold text-white"}>
                   <tr>
                       <td>Home</td>
-                      <td><Link to={"about"}>About</Link></td>
-                      <td><Link to={"services"}>Services</Link></td>
+                      <td><Link to={"about"}>Über Uns</Link></td>
+                      <td><Link to={"services"}>Dienstleistungen</Link></td>
                       <td>
-                          <button onClick={() => setOpen(!open)}>Contact</button>
+                          <button onClick={() => setOpen(!open)}>Kontakt</button>
                           {open && <Modal in={open}>Click anywhere to close</Modal>}
                       </td>
                   </tr>

@@ -35,21 +35,21 @@ export class Home extends React.Component<any, any> {
                     </div>
                 </div>
                 <div id={"about"} className={"flex max-w-full flex-none h-1/6 w-screen"}>
-                    <Terminal img_src={homenav} txt={this.txt_about} type={this.big}/>
+                    <Terminal img_src={homenav} header="Über Uns" txt={this.txt_about} type={this.big}/>
                 </div>
                 <div id={"services"}>
-                <Headline txt={"Landscaping Services"} type={3}/>
+                    <Headline txt={"Landscaping Services"} type={3}/>
                     <div className={"flex h-1/6 w-screen overflow-hidden"}>
                         <div id={""} className={"max-w-full"}>
                             <div id={"row"} className={"flex max-w-full flex-row"}>
-                                <Terminal img_src={paving} header="Paving" type={0}/>
-                                <Terminal img_src={fence} header="Fences" type={0}/>
-                                <Terminal img_src={excavation} header="Excavation" type={0}/>
+                                <Terminal img_src={paving} header="Pflasterarbeiten" type={0}/>
+                                <Terminal img_src={fence} header="Zäune" type={0}/>
+                                <Terminal img_src={excavation} header="Baggerarbeiten" type={0}/>
                             </div>
 
                             <div id={"row"} className={"flex max-w-full flex-row"}>
-                                <Terminal img_src={homenav} header="Gardening" txt={this.txt_paving} type={0}/>
-                                <Terminal img_src={homenav} header="Gardening" txt={this.txt_paving} type={0}/>
+                                <Terminal img_src={homenav} header="Gartenpflege" txt={this.txt_paving} type={0}/>
+                                <Terminal img_src={homenav} header="Landschaftsdesign" txt={this.txt_paving} type={0}/>
                             </div>
                         </div>
                 </div>

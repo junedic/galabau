@@ -14,7 +14,7 @@ export function Headline(props: { txt: string; type: number; })
                  break;
     }
     return(
-        <div className={"flex justify-center"}>
+        <div className={"flex justify-center mt-20"}>
             <span className={"bg-green-100 bg-opacity-50 p-4 border-2 border-green-400 rounded-full "+txt_size}>{props.txt}</span>
         </div>
     );
