@@ -1,0 +1,8 @@
+.termbig {
+    max-width: 100vw;
+    height: 40vh;
+}
+
+.termsmall {
+    justify-content: space-evenly;
+}
